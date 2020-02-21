@@ -1,4 +1,9 @@
-module.exports = function countCats(/* matrix */) {
-  throw 'Not implemented';
-  // remove line with error and write your code here
+module.exports = function countCats(matrix) {
+    let cats_qt = 0;
+    matrix.forEach(i => {
+      i.forEach(j => {
+        if(j === "^^") cats_qt++;
+      })
+    })
+    return cats_qt;
 };
